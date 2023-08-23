@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Master - Namakadai</title>
+    <link rel="stylesheet" href="/static/purchasemaster.css"></linkrel>
+</head>
+<body>
+    <a href="{{ url_for('entry') }}">Back to Entry</a>
+   <div class="purchase-form">
+        <h2>Purchase Master</h2>
+        <form action="/purchasemaster" method="POST">
+        
+            <input type="number" name="product_id" placeholder="Product ID" required>
+            <input type="text" name="productname" placeholder="Product name" required>
+            <input type="number" name="qty" placeholder="Quantity" required>
+            <input type="text" name="rate" placeholder="Rate" required>
+            <input type="text" name="amount" placeholder="Amount" required>
+            <h6>{{result}}</h6>
+            <button type="submit" class="submit-button">Save</button>
+        </form>
+    </div>
+</body>
+</html>

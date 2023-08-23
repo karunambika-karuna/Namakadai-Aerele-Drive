@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Master - Namakadai</title>
+    <link rel="stylesheet" href="/static/productmaster.css">
+        
+</head>
+<body>
+    <a href="{{ url_for('entry') }}">Back to Entry</a>
+    
+    <table border="1">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+        
+        </tr>
+      {% for user in data %}
+        <tr>
+            <td>{{user.product_id}}</td>
+            <td>{{user.productname}}</td>
+            <td>{{user.qty}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </body>
+</html>
