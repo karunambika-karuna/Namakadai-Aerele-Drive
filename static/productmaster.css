@@ -1,0 +1,49 @@
+
+
+/* Apply basic styles to the entire page */
+body {
+    background-image: url("/static/img1.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Style the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+/* Style table header */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d7bf53;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Apply alternating row colors */
+tr:nth-child(even) {
+    background-color: #f0eeec;
+}
+
+/* Style the back-to-entry link */
+a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #666;
+}
